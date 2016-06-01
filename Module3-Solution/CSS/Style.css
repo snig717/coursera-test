@@ -1,0 +1,13 @@
+.navbar-nav > li > a {
+ background-color: #D4D4D4;
+}
+
+.section{
+	background-color: #D4D4D4;
+	padding: 15px;
+	margin-bottom: 30px;
+}
+
+@media (max-width:767px){
+	.navbar-default .navbar-nav>li>a {margin: 0 15px 0 15px;}
+} 

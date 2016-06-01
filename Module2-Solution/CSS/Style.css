@@ -1,0 +1,67 @@
+	/********* Base styles **********/
+	*{
+	  box-sizing: border-box;
+	}
+
+	.row {
+	  width: 100%;
+	  font-family: Helvetica;
+	}
+
+	h1 {
+	  margin-bottom: 20px;
+	  font-family: 'Comic Sans MS';
+	  text-align-last: center;
+	  font-size: 1.75em;
+	}
+
+	P{
+		font-size: 14px;
+	  border: 1px solid black;
+	}
+
+	.section {
+	  background-color: #009688;
+	  color: white;
+	  padding: 35px 10px 10px 10px; 
+	  margin:5px;
+	}
+
+	.sectiontitle {
+		position: absolute;
+		margin: 0px;
+		right: 6px;
+		top:6px;
+	  padding: 2px;
+	  font-size: 1.25em;
+	}
+
+	#titleIndian {background-color: #FFA389;}
+	#titleChinese {background-color: #C16E33;}
+	#titleMexican {background-color: #FF86C5;}
+
+	/********** Set Section Default Position & Behaviour **********/
+	.col-dv-4, .col-dv-6, .col-dv-12, .col-tv-4, .col-tv-6, .col-tv-12, .col-mv-4, .col-mv-6, .col-mv-12 {
+		float: left;
+	  position:relative;
+		}
+
+	/********** Desktop View only **********/
+	@media (min-width: 992px){
+		.col-dv-4 {width: 33.33%; } 
+		.col-dv-6 {width: 50%; } 
+		.col-dv-12 {width: 100%; }
+	}
+
+	/********** Tablet View only **********/
+	@media(min-width: 768px) and (max-width: 991px){
+		.col-tv-4 {width: 33.33%; } 
+		.col-tv-6 {width: 50%; } 
+		.col-tv-12 {width: 100%;}
+	}
+	/********** Mobile View only **********/
+	@media(max-width: 767px){
+			.col-mv-4 {width: 33.33%; } 
+			.col-mv-6 {width: 50%; } 
+			.col-mv-12 {width: 100%;}
+		}
